@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock title %}
+
+{% block content %}
+
+<link href="/static/djangoproject/css/style.css" rel="stylesheet">
+
+<h1 class="head">Create an Account</h1>
+<div class="ap_container">
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-lg btn-outline-success">Create Account</button>
+</form>
+</div>
+
+{% endblock content %}
